@@ -60,7 +60,7 @@ MIT
 
 ## Author
 
-Your Name
+Jaison Davidn M
 
 ## Contributing
 
