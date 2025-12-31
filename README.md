@@ -5,7 +5,7 @@ A lightweight npm package to generate random OTP (One-Time Password) with custom
 ## Installation
 
 ```bash
-npm install simple-otp-generator
+npm install @jaison07/otp-generator
 ```
 
 ## Usage
