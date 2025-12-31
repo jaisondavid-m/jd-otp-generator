@@ -1,5 +1,5 @@
 {
-  "name": "@jd777/otp-generator",
+  "name": "@jd/otp-generator",
   "version": "1.0.0",
   "description": "A simple npm package to generate random OTP (One-Time Password) with customizable length",
   "main": "index.js",
