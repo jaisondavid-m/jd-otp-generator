@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple npm package to generate random OTP (One-Time Password) with customizable length",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "node test.js"
   },
@@ -14,14 +15,14 @@
     "authentication",
     "2fa"
   ],
-  "author": "Jaison David M",
+  "author": "Jaison M",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaisondavid-m/jd-otp-generator.git"
+    "url": "https://github.com/jaison-david-m/jd-otp-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/jaisondavid-m/jd-otp-generator/issues"
+    "url": "https://github.com/jaison-david-m/jd-otp-generator/issues"
   },
-  "homepage": "hhttps://github.com/jaisondavid-m/jd-otp-generator#readme"
+  "homepage": "https://github.com/jaison-david-m/jd-otp-generator#readme"
 }
