@@ -1,75 +1,67 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Simple OTP Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A lightweight npm package to generate random OTP (One-Time Password) with customizable digit length.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+```bash
+npm install simple-otp-generator
+```
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```javascript
+const generateOTP = require('simple-otp-generator');
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+// Generate a 6-digit OTP (default)
+const otp = generateOTP();
+console.log(otp); // Example: "482915"
 
-### `npm test`
+// Generate a 4-digit OTP
+const otp4 = generateOTP(4);
+console.log(otp4); // Example: "7293"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+// Generate an 8-digit OTP
+const otp8 = generateOTP(8);
+console.log(otp8); // Example: "18475629"
+```
 
-### `npm run build`
+## API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `generateOTP(length)`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Generates a random OTP of the specified length.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Parameters:**
+- `length` (number, optional): The number of digits in the OTP. Default is 6.
 
-### `npm run eject`
+**Returns:**
+- (string): The generated OTP as a string.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Throws:**
+- Error if length is not a positive number.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Examples
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```javascript
+const generateOTP = require('simple-otp-generator');
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+// Default 6-digit OTP
+console.log(generateOTP()); // "482915"
 
-## Learn More
+// Custom length
+console.log(generateOTP(4)); // "7293"
+console.log(generateOTP(8)); // "18475629"
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Your Name
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# jd-otp-generator
-A simple npm package to generate random OTP (One-Time Password) with customizable length
->>>>>>> 255f3844c89e4322dedbd2e530b00e2fd899b9b8
+Contributions are welcome! Please feel free to submit a Pull Request.
